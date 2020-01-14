@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.font-small{
+    font-size:$font-sm;
+}
+
+.font-bold{
+    font-weight: 600;
+}
+
+.error-msg{
+    color:#be0027;
+    font-weight: 700;
+    font-size:$font-sm;
+}
+
+.color-white{
+    color:$color-white;
+}

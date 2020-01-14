@@ -1,0 +1,68 @@
+@import './../../../assets/scss/variables.scss';
+@import './../../../assets/scss/mixins.scss';
+@import './../../../assets/scss/style.scss';
+
+.loggedOutWrapper {
+  background: linear-gradient($background-primary-tranparent, $background-primary-tranparent),
+    url("./../../../assets/images/loggedOutBackground.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .loader-wrapper{
+      position: absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background:#fff8;
+      .loader{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform: translate(-50%, -50%);
+      }
+  }
+  h2, p, label {
+    color: $color-white;
+  }
+  .other-options{
+      display:flex;
+      justify-content: space-between;
+      a{
+        color: $color-white;
+        &:hover{
+            // color:$background-secondary;
+            text-shadow:0 0 5px #fff;
+            text-decoration: none;
+        }
+      }
+  }
+  .fullSizeButton{
+      display:block;
+      width:100%;
+      background-color:$background-secondary;
+      border-color:$background-secondary;
+      border-radius:0;
+      &:hover{
+          background-color:$background-secondary-hover;
+          border-color:$background-secondary-hover;
+      }
+  }
+  .form-group {
+    position: relative;
+    input {
+      height: size(40);
+      border-radius: 0;
+      &::placeholder {
+        font-size: $font-xs;
+      }
+    }
+    .icon{
+        position:absolute;
+        top:calc(50% - 8px);
+        right:size(10);
+        color:$background-primary-tranparent;
+    }
+  }
+}
