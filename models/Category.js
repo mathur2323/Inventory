@@ -14,7 +14,7 @@ const CategorySchema = new Schema({
             status:Boolean,
             createdDate:String
         }],
-        required:true
+        // required:true
     }
 })
 
